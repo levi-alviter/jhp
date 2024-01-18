@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  animation: backgroundGradient;
+  -webkit-animation: backgroundGradient;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-duration: 20s;
+}
+
+/* Magazine */
+.book {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  transition: transform 0.5s ease-out;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+
+.front,
+.back {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 500ms ease-out;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.back-content {
+  transform: rotateY(180deg);
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.back {
+  z-index: 0;
+}
+
+.front-content,
+.back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Paper flip effect*/
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+/* Controller buttons */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.5s ease-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+}
+
+.paper:last-child {
+  transition-delay: 500ms;
+  transition: z-index;
+}
+
+@keyframes backgroundGradient {
+  0% {
+    background-color: #4cb5f5;
+  }
+
+  25% {
+    background-color: #b7b8b6;
+  }
+
+  50% {
+    background-color: #34675c;
+  }
+
+  75% {
+    background-color: #b3c100;
+  }
+
+  100% {
+    background: #6ab187;
+  }
+}

@@ -1,0 +1,182 @@
+.front-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.pa-1 {
+  padding: 1rem;
+}
+
+.background-color {
+  background-color: #f1f3ce;
+}
+
+.multiple-color-border {
+  border: 4px solid;
+  border-image: -moz-linear-gradient(
+    left,
+    #fed330 0%,
+    #fed330 20%,
+    #e63841 20%,
+    #e63841 20%,
+    #e63841 40%,
+    #5ed6fd 40%,
+    #5ed6fd 40%,
+    #e63841 40%,
+    #5ed6fd 40%,
+    #5ed6fd 40%,
+    #5ed6fd 60%,
+    #45c33b 60%,
+    #45c33b 80%,
+    #1172c0 80%,
+    #1172c0 80%,
+    #1172c0 100%
+  ); /* FF3.6+ */
+  border-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0%, #fed330),
+      color-stop(20%, #fed330),
+      color-stop(20%, #e63841),
+      color-stop(20%, #e63841),
+      color-stop(40%, #e63841),
+      color-stop(40%, #5ed6fd),
+      color-stop(40%, #5ed6fd),
+      color-stop(40%, #e63841),
+      color-stop(40%, #5ed6fd),
+      color-stop(40%, #5ed6fd),
+      color-stop(60%, #5ed6fd),
+      color-stop(60%, #45c33b),
+      color-stop(80%, #45c33b),
+      color-stop(80%, #1172c0),
+      color-stop(80%, #1172c0),
+      color-stop(100%, #1172c0)
+    )
+    1 stretch repeat; /* Chrome,Safari4+ */
+  border-image: -webkit-linear-gradient(
+      left,
+      #fed330 0%,
+      #fed330 20%,
+      #e63841 20%,
+      #e63841 20%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #5ed6fd 60%,
+      #45c33b 60%,
+      #45c33b 80%,
+      #1172c0 80%,
+      #1172c0 80%,
+      #1172c0 100%
+    )
+    1 stretch repeat; /* Chrome10+,Safari5.1+ */
+  border-image: -o-linear-gradient(
+      left,
+      #fed330 0%,
+      #fed330 20%,
+      #e63841 20%,
+      #e63841 20%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #5ed6fd 60%,
+      #45c33b 60%,
+      #45c33b 80%,
+      #1172c0 80%,
+      #1172c0 80%,
+      #1172c0 100%
+    )
+    1 stretch repeat; /* Opera 11.10+ */
+  border-image: -ms-linear-gradient(
+      left,
+      #fed330 0%,
+      #fed330 20%,
+      #e63841 20%,
+      #e63841 20%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #5ed6fd 60%,
+      #45c33b 60%,
+      #45c33b 80%,
+      #1172c0 80%,
+      #1172c0 80%,
+      #1172c0 100%
+    )
+    1 stretch repeat; /* IE10+ */
+  border-image: linear-gradient(
+      to right,
+      #fed330 0%,
+      #fed330 20%,
+      #e63841 20%,
+      #e63841 20%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #e63841 40%,
+      #5ed6fd 40%,
+      #5ed6fd 40%,
+      #5ed6fd 60%,
+      #45c33b 60%,
+      #45c33b 80%,
+      #1172c0 80%,
+      #1172c0 80%,
+      #1172c0 100%
+    )
+    1 stretch repeat; /* W3C */
+}
+
+.front-cover img,
+.back-cover img {
+  width: 100%;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.18));
+}
+
+.front-cover h1 {
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.back-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.back-cover h2 {
+  font-size: 2rem;
+}
+
+.back-cover p {
+  font-size: 1.3rem;
+}
+
+.back-cover img {
+  width: 100%;
+  max-height: 170px;
+  object-fit: contain;
+}
+
+.main-img {
+  width: 85%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transform: rotateZ(10deg);
+  border-width: 8px;
+  border-style: dashed;
+  border-color: #DDBC95;
+  border-radius: 20px 20px 20px 20px;
+}

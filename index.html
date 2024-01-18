@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Script-->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" href="customized.css" type="text/css" />
+    <!-- defer makes the DOM load before the script, although it is written before than the body -->
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- Previous button -->
+    <button id="prev-btn">
+      <img src="assets/arrowleft.svg" />
+    </button>
+
+    <!-- Book -->
+    <div id="book" class="book">
+      <!-- Paper 1 -->
+      <div class="paper">
+        <div class="front">
+          <div
+            class="front-content front-cover pa-1 multiple-color-border background-color"
+          >
+            <h1>Happy Birthday!</h1>
+            <img
+              src="https://i.pinimg.com/originals/20/17/1d/20171dda0f6f990c7c47898ba9c10d46.png"
+            />
+          </div>
+        </div>
+        <div class="back">
+          <div
+            class="back-content back-cover pa-1 multiple-color-border background-color"
+          >
+            <h2>Hey Jakub, Happy Birthday</h2>
+            <p>
+              My best wishes for you in this new year, I hope it gets full of
+              happiness, success and fun. May your dreams come true!
+            </p>
+            <span>Don't forget to eat a lot of cake.</span>
+            <img
+              src="https://accessally.com/wp-content/uploads/2019/03/Icon-Fancy-Cake.png"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Paper 2 -->
+      <div class="paper">
+        <div class="front">
+          <div
+            class="front-content last-front pa-1 multiple-color-border background-color"
+          >
+            <img class="main-img" src="https://i.pinimg.com/474x/f1/46/37/f14637511b73de6446259ccf0826b47f.jpg"> 
+          </div>
+        </div>
+        <div class="back last-back">
+          <div
+            class="back-content last-back pa-1 multiple-color-border background-color"
+          >
+            <h1>Atte: Levi</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next button -->
+    <button id="next-btn">
+      <img src="assets/arrowright.svg" />
+    </button>
+  </body>
+</html>

@@ -171,7 +171,7 @@
 }
 
 .main-img {
-  width: 85%;
+  width: 90%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   transform: rotateZ(10deg);
